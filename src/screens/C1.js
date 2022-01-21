@@ -1,20 +1,27 @@
 import React from "react";
-import {Text, StyleSheet} from "react-native";
+import {View, Text, StyleSheet} from "react-native";
 
 
 const C1=()=>{
+	const myName="faizan";
+	const newNativeComponent=<Text>Cat is freaking awesome</Text>
 	
 	return (
-	
-	<Text style={styles.container}>Hello </Text>
+	<View>
+	<Text style={styles.container}>Hello {myName} </Text>
+	{newNativeComponent}
+	</View>
 	)
 	
 	}
 	const styles=StyleSheet.create({
 		
 		container:{
-			color:"green",
-			backgroundColor:"blue"
+			color:"red",
+			backgroundColor:"blue",
+			fontSize:"50px",
+			fontFamily:"times",
+			marginTop:"40px"
 			
 			}
 		});
