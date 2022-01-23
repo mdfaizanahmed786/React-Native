@@ -3,6 +3,7 @@ import C1 from './src/screens/C1.js';
 import Challenge1 from './src/challenge1/Challenge1.js'
 import ButtonImplement from './src/screens/ButtonImplement.js'
 import FlatListImplement from './src/screens/FlatListImplement.js';
+import ImageDemo from './src/screens/ImageDemo.js';
 import { Text, View, StyleSheet} from "react-native";
 
 const App=()=>{
@@ -16,6 +17,7 @@ const App=()=>{
 	</View>
 	<ButtonImplement/>
 	<FlatListImplement/>
+	<ImageDemo/>
 	</>
 
 )
