@@ -1,11 +1,13 @@
 import React from "react";
-import { View, Text, StyleSheet} from "react-native";
+import { View, Text, StyleSheet, ActivityIndicator} from "react-native";
 
 const Challenge1=()=>{
 	const myName="Faizan"
 	return (
 	<View>
 	<Text style={styles.container1}>Hello! Welcome to Thapa Technical Youtube Channel</Text>
+	{/*<ActivityIndicator color="green" size="small"/>*/}
+	<ActivityIndicator color="red" size="large" animating={true}/>
 	<Text style={styles.container2}>One of my favorite YouTubers is Thapa Technical</Text>
 	
 	<Text style={styles.container3}>My name is {myName} and I love Programming</Text>
