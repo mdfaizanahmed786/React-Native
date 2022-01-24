@@ -27,13 +27,13 @@ const FlatListImplement=()=>{
 	return (
 	<View>
 	
-	<FlatList horizontal={false} numColumns={2} data={DATA} renderItem={(element)=>{
+	<FlatList horizontal={true}  data={DATA} renderItem={(element)=>{
 		
 		return (
 		<Text style={styles.textStyle}>{element.item.id} {element.item.name}</Text>
 		);
 		
-		}} />
+		}} keyExtractor={(item)=>item.id} showsHorizontalScrollIndicator={false}/>
 	</View>
 	);
 	
