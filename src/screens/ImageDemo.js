@@ -20,7 +20,7 @@ const ImageDemo=()=>{
 			
 			height:400,
 			width:400,
-			marginVertical:90,
+			marginVertical:10,
 			marginLeft:20
 			
 			},

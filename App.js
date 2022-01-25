@@ -4,12 +4,15 @@ import Challenge1 from './src/challenge1/Challenge1.js'
 import ButtonImplement from './src/screens/ButtonImplement.js'
 import FlatListImplement from './src/screens/FlatListImplement.js';
 import ImageDemo from './src/screens/ImageDemo.js';
-import { Text, View, StyleSheet} from "react-native";
+import { Text, View, StyleSheet, StatusBar} from "react-native";
+import TextInputDemo from './src/screens/TextInputDemo.js'
 
 const App=()=>{
 	
 	return (
 	<>
+	<StatusBar animated={true}
+        backgroundColor="#61dafb"  hidden={false}/>
 	<View style={styles.container}>
 	<Text>Hello, I'm from App component</Text>
 	<C1/>
@@ -18,6 +21,7 @@ const App=()=>{
 	<ButtonImplement/>
 	<FlatListImplement/>
 	<ImageDemo/>
+	<TextInputDemo/>
 	</>
 
 )
