@@ -8,7 +8,7 @@ import { Text, View, StyleSheet, StatusBar} from "react-native";
 import TextInputDemo from './src/screens/TextInputDemo.js'
 
 const App=()=>{
-	
+	const [input, setInput]=React.useState('');
 	return (
 	<>
 	<StatusBar animated={true}
@@ -18,10 +18,10 @@ const App=()=>{
 	<C1/>
 	<Challenge1/>
 	</View>
-	<ButtonImplement/>
+	<ButtonImplement  showText={input}/>
 	<FlatListImplement/>
 	<ImageDemo/>
-	<TextInputDemo/>
+	<TextInputDemo   grabText={setInput}/>
 	</>
 
 )

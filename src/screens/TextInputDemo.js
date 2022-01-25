@@ -1,10 +1,11 @@
 import React from "react";
 import {View, TextInput, StyleSheet, Text} from "react-native"
 
-const TextInputDemo=()=>{
+const TextInputDemo=({ grabText } )=>{
 	const [text, setText]=React.useState('');
 	const changeText=(e)=>{
 		setText(e.target.value);
+		grabText(text);
 		}
 		
 	return (
@@ -12,7 +13,7 @@ const TextInputDemo=()=>{
 	<View style={styles.container}>
 	{/* maxLength holds good for keyboardType="numeric" */}
 	<Text style={styles.heading}>Input Container</Text>
-	<TextInput  value={text} onChange={changeText} keyboardType="default" maxLength={10} style={styles.inputContainer} placeholder="Enter your name" editable={true} multiLine={false} textAlign="center" selectTextOnFocus={true}   selectionColor="#7fffd4"/>
+	<TextInput  value={text} onChange={changeText} keyboardType="default" maxLength={100} style={styles.inputContainer} placeholder="Enter your name" editable={true} multiLine={false}  selectTextOnFocus={true}   selectionColor="#7fffd4"/>
 	</View>
 	
 	);
