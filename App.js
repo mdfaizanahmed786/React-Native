@@ -6,6 +6,7 @@ import FlatListImplement from './src/screens/FlatListImplement.js';
 import ImageDemo from './src/screens/ImageDemo.js';
 import { Text, View, StyleSheet, StatusBar} from "react-native";
 import TextInputDemo from './src/screens/TextInputDemo.js'
+import NetflixScroll from './src/challenge2/NetflixScroll.js'
 
 const App=()=>{
 	const [input, setInput]=React.useState('');
@@ -22,6 +23,7 @@ const App=()=>{
 	<FlatListImplement/>
 	<ImageDemo/>
 	<TextInputDemo   grabText={setInput}/>
+	<NetflixScroll/>
 	</>
 
 )

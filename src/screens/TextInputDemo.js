@@ -26,7 +26,7 @@ const TextInputDemo=({ grabText } )=>{
 			margin:30
 			},
 			container:{
-				margin:20,
+				margin:10,
 				
 				},
 				heading:{
