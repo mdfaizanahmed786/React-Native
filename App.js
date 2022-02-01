@@ -7,6 +7,7 @@ import ImageDemo from './src/screens/ImageDemo.js';
 import { Text, View, StyleSheet, StatusBar} from "react-native";
 import TextInputDemo from './src/screens/TextInputDemo.js'
 import NetflixScroll from './src/challenge2/NetflixScroll.js'
+import Link from './src/screens/Link.js'
 
 const App=()=>{
 	const [input, setInput]=React.useState('');
@@ -24,6 +25,7 @@ const App=()=>{
 	<ImageDemo/>
 	<TextInputDemo   grabText={setInput}/>
 	<NetflixScroll/>
+	<Link/>
 	</>
 
 )

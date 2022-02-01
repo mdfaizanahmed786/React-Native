@@ -1,5 +1,5 @@
 import React from "react";
-import {View, SafeAreaView, Text, FlatList, StyleSheet} from "react-native";
+import {View, SafeAreaView, Text, FlatList, StyleSheet, TouchableOpacity} from "react-native";
 const netflixData=[
 
         {
@@ -80,15 +80,18 @@ const NetflixScroll=()=>{
 	return (
 	<SafeAreaView style={{marginVertical:70}}>
 	<Text style={styles.heading}>Netflix Scroll</Text>
+	
 	<FlatList  data={netflixData} renderItem={elem=>{
 		const { name, year, creator, genre }=elem.item;
 		return (
+		<TouchableOpacity>
 		<View style={{ padding:20, backgroundColor:"red" , margin:10, display:"flex", width:150}}>
 		<Text style={styles.textStyle}>{name}</Text>
 		<Text style={styles.textStyle}>{year}</Text>
 		<Text style={styles.textStyle}>{creator}</Text>
 		<Text style={styles.textStyle}>{genre}</Text>
 		</View>
+		</TouchableOpacity>
 		);
 		
 	
